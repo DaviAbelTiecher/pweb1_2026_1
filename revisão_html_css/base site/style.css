@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e2922; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    min-height: 100vh; 
+    color: #333;
+}
+
+header, nav, footer, main > aside, main > div {
+    background-color: #ffffff; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+header, footer {
+    background-color: #0f6130; 
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.logo-nav {
+    width: 60px; 
+    margin: 0; 
+    border: none; 
+    border-radius: 0; 
+}
+
+nav p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #0f6130;
+}
+
+main {
+    display: flex;
+    gap: 20px; 
+    flex: 1; 
+}
+
+main > aside {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > div {
+    flex: 3; 
+}
+
+h2, h3 {
+    color: #b31217; 
+    margin-bottom: 15px;
+}
+
+video, img {
+    height: auto;
+    border-radius: 8px; 
+    margin: 15px auto; 
+    border: 2px solid #e2e6e9;
+    display: block; 
+}
+
+main > aside video, 
+main > aside img {
+    max-width: 220px; 
+    width: 100%;
+}
+
+main > div video {
+    max-width: 320px; 
+    width: 100%;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.texto-justificado {
+    text-align: justify; 
+    padding: 0 15px;
+}
+
+.texto-explicacao {
+    font-size: 0.95rem;
+    color: #555;
+    font-style: italic;
+    border-left: 4px solid #0f6130;
+    padding-left: 10px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 850px) {
+    main {
+        flex-direction: column;
+    }
+}
